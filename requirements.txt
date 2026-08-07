@@ -1,0 +1,11 @@
+# agent_framework
+python-dotenv
+streamlit
+pandas
+openpyxl
+matplotlib
+pillow
+fastapi
+uvicorn
+websockets
+fastmcp

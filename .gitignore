@@ -1,0 +1,6 @@
+.env
+file_search/
+code_interpreter/
+venv/
+logs/
+pycache/
