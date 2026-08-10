@@ -1,0 +1,31 @@
+from fastapi import APIRouter,FastAPI
+import models.request
+from models.response import ChatResponse
+from agents.crm_agent import agent
+from utils.human_approval import handle_approvals
+from utils.session_manager import session_manager
+
+app = FastAPI()
+@app.post("/chat",response_model=ChatResponse,)
+async def chat(request: models.request.ChatRequest):
+
+    session = session_manager.get_or_create(
+        request.session_id,
+        agent,
+    )
+    print(f"Session ID: {session.session_id}")
+    result = await agent.run(
+        request.message,
+        session=session,
+    )
+    print(f"Agent Result: {result.text}")
+
+    result = await handle_approvals(
+        agent,
+        result,
+        session,
+    )
+
+    return ChatResponse(
+        response=result.text,
+    )
