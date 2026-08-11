@@ -1,5 +1,6 @@
 import logging
 import os
+import sys
 from datetime import datetime
 LOG_DIR="logs"
 #log folder creation
@@ -10,7 +11,7 @@ logging.basicConfig(
     level=logging.INFO,
       handlers=[
         logging.FileHandler(LOG_FILE),
-        logging.StreamHandler()
+        logging.StreamHandler(sys.stderr)
         ]
 )
 #logger

@@ -120,15 +120,12 @@ class BusinessCentralClient:
     ) -> dict[str, Any]:
 
         correlation_id = str(uuid.uuid4())
-        print("DEBUG 3: BusinessCentralClient starting request")
 
         auth_retry_used = False
         retry_attempt = 0
 
         while True:
-            print("DEBUG 4: Requesting access token")
             token = await self._auth_service.get_access_token()
-            print("DEBUG 5: Access token received")
 
             headers = HeaderBuilder.json(token)
 
@@ -146,7 +143,6 @@ class BusinessCentralClient:
             )
 
             try:
-                print("DEBUG 6: Sending HTTP request to Business Central")
 
                 response = await self._send(
                     method=method,
@@ -155,10 +151,7 @@ class BusinessCentralClient:
                     params=params,
                     json=json,
                 )
-                print(
-        f"DEBUG 7: Business Central response received "
-        f"(HTTP {response.status_code})"
-    )
+                
 
             except Exception as exc:
                 if (

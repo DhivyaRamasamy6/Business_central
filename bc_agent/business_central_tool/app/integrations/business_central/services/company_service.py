@@ -15,12 +15,10 @@ class CompanyService:
         self.client = client
 
     async def get_companies(self) -> list[dict]:
-        print("DEBUG 1: CompanyService.get_companies()")
 
         response = await self.client.get(
             BusinessCentralEndpoints.companies()
         )
-        print("DEBUG 2: BusinessCentralClient returned response")
 
         return response.get("value", [])
 

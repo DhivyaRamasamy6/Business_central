@@ -51,7 +51,6 @@ class CustomerResponse(BaseModel):
     @field_validator("blocked", mode="before")
     @classmethod
     def normalize_blocked(cls, value):
-        print(f"DEBUG VALIDATOR INPUT: {value!r}")
 
         if value is None:
             return None
@@ -65,7 +64,6 @@ class CustomerResponse(BaseModel):
                 r"\u0020",
                 "",
             }:
-                print("DEBUG: Converting encoded blank to SPACE")
                 return CustomerBlocked.NONE.value
 
         return value

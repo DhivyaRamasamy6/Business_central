@@ -64,7 +64,6 @@ class FakeCustomerService:
 
 
 async def main():
-    print("Starting READ tool tests...\n")
 
     company_service = FakeCompanyService()
     customer_service = FakeCustomerService()
@@ -73,13 +72,11 @@ async def main():
     # Test 1: Get Companies
     # ---------------------------------------------------------
 
-    print("Testing get_companies tool...")
 
     companies = await get_companies(
         company_service
     )
 
-    print(f"Companies returned: {len(companies)}")
 
     for company in companies:
         print(
@@ -91,7 +88,6 @@ async def main():
     # Test 2: Validate Company
     # ---------------------------------------------------------
 
-    print("\nTesting validate_company tool...")
 
     company = await validate_company(
         company_service,
@@ -107,7 +103,6 @@ async def main():
     # Test 3: List Customers
     # ---------------------------------------------------------
 
-    print("\nTesting list_customers tool...")
 
     customers = await list_customers(
         customer_service,
@@ -131,7 +126,6 @@ async def main():
     # Test 4: Get Customer
     # ---------------------------------------------------------
 
-    print("\nTesting get_customer tool...")
 
     customer = await get_customer(
         customer_service,
@@ -143,8 +137,6 @@ async def main():
         f"Customer returned: "
         f"{customer['displayName']}"
     )
-
-    print("\nREAD tool tests completed successfully.")
 
 
 if __name__ == "__main__":
