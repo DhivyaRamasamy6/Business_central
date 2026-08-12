@@ -5,8 +5,8 @@ from agents.crm_agent import agent
 from utils.human_approval import handle_approvals
 from utils.session_manager import session_manager
 
-app = FastAPI()
-@app.post("/chat",response_model=ChatResponse,)
+router = APIRouter(prefix="/Agent_Response",tags=["Business Central Agent"])
+@router.post("/chat",response_model=ChatResponse,)
 async def chat(request: models.request.ChatRequest):
 
     session = session_manager.get_or_create(

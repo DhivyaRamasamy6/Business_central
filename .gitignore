@@ -5,3 +5,4 @@ venv/
 logs/
 pycache/
 business_central_mcp/
+Business_central_agent/
