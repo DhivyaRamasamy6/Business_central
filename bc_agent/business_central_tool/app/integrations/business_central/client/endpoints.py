@@ -62,3 +62,44 @@ class BusinessCentralEndpoints:
         )
 
         return f"{cls.customers(company_id)}({customer_id})"
+
+    @classmethod
+    def invoices(cls, company_id: str) -> str:
+        return f"{cls.company(company_id)}/salesInvoices"
+
+    @classmethod
+    def invoice(
+        cls,
+        company_id: str,
+        invoice_id: str,
+    ) -> str:
+        invoice_id = cls._validate_uuid(
+            invoice_id,
+            "invoice_id",
+        )
+
+        return f"{cls.invoices(company_id)}({invoice_id})"
+
+    @classmethod
+    def sales_orders(cls, company_id: str) -> str:
+        """
+        Return the Business Central sales orders collection endpoint.
+        """
+        return f"{cls.company(company_id)}/salesOrders"
+
+
+    @classmethod
+    def sales_order(
+        cls,
+        company_id: str,
+        sales_order_id: str,
+    ) -> str:
+        """
+        Return the Business Central sales order endpoint.
+        """
+        sales_order_id = cls._validate_uuid(
+            sales_order_id,
+            "sales_order_id",
+        )
+
+        return f"{cls.sales_orders(company_id)}({sales_order_id})"
