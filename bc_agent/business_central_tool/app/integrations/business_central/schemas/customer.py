@@ -18,11 +18,15 @@ class CustomerBlocked(str, Enum):
 
 
 class CustomerResponse(BaseModel):
-    model_config = ConfigDict(extra="ignore")
+    model_config = ConfigDict(
+        extra="ignore",
+        populate_by_name=True,
+    )
 
     id: UUID
     number: str
     displayName: str
+
     type: CustomerType | None = None
 
     addressLine1: str | None = None
@@ -48,6 +52,14 @@ class CustomerResponse(BaseModel):
 
     lastModifiedDateTime: datetime | None = None
 
+    # Business Central OData concurrency value.
+    # Business Central returns this as "@odata.etag".
+    etag: str | None = Field(
+        default=None,
+        validation_alias="@odata.etag",
+        serialization_alias="etag",
+    )
+
     @field_validator("blocked", mode="before")
     @classmethod
     def normalize_blocked(cls, value):
@@ -68,8 +80,13 @@ class CustomerResponse(BaseModel):
 
         return value
 
+
 class CustomerCreateRequest(BaseModel):
-    displayName: str = Field(min_length=1, max_length=100)
+    displayName: str = Field(
+        min_length=1,
+        max_length=100,
+    )
+
     type: CustomerType = CustomerType.COMPANY
 
     addressLine1: str | None = None
