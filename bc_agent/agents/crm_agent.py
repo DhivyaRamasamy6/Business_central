@@ -6,13 +6,14 @@ from tool.business_central.companies.read import list_companies,get_company
 from tool.business_central.customers.read import list_customers,get_customer
 from tool.business_central.sales_orders.read import list_sales_order,get_sales_order
 from tool.business_central.invoices.read import list_invoices,get_invoice
-
-
+from tool.business_central.customers.write import create_customer,update_customer,delete_customer
+from middleware.error_handling import error_handling_middleware
 agent = Agent(
     name="Business Central Agent",
     client=foundry_client,
     instructions=instructions,
-    tools=[list_companies,get_company,list_customers,get_customer,list_invoices,get_invoice,list_sales_order,get_sales_order],
+    middleware=[error_handling_middleware],
+    tools=[list_companies,get_company,list_customers,get_customer,list_invoices,get_invoice,list_sales_order,get_sales_order,create_customer,update_customer,delete_customer],
 )
 
 

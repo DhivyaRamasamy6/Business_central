@@ -41,7 +41,7 @@ from business_central_tool.app.core.exceptions.handlers import (
     token_expired_error_handler,
     token_refresh_error_handler,
 )
-
+from api.router import router as agent_router
 
 app = FastAPI(
     title="Business Central Backend API",
@@ -110,7 +110,7 @@ app.add_exception_handler(
 # ============================================================
 # BUSINESS CENTRAL REST API ROUTERS
 # ============================================================
-
+app.include_router(agent_router)
 app.include_router(company_router)
 
 app.include_router(customer_router)

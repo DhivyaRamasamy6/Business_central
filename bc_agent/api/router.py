@@ -29,3 +29,4 @@ async def chat(request: models.request.ChatRequest):
     return ChatResponse(
         response=result.text,
     )
+

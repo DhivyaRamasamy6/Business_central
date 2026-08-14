@@ -1,0 +1,3 @@
+2026-08-14 09:16:54,340 | WARNING | business_central_tool.app.core.exceptions.handlers | Business Central bad request: {"error": {"code": "RequestDataInvalid","message": "Request data is invalid."}}
+2026-08-14 09:17:15,919 | ERROR | business_central_tool.app.core.exceptions.handlers | Business Central API error: {"error":{"code":"Unknown","message":"The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.  CorrelationId:  958571e2-0fd9-475d-8889-8c5c0aaf8028."}}
+2026-08-14 09:18:21,414 | WARNING | business_central_tool.app.core.exceptions.handlers | Business Central bad request: {"error": {"code": "RequestDataInvalid","message": "Request data is invalid."}}

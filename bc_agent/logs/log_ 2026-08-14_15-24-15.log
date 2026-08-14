@@ -1,0 +1,21 @@
+2026-08-14 15:24:21,448 | ERROR | business_central_tool.app.core.exceptions.handlers | Business Central error: Invalid company_id: b497dc51-8376-f111-a5be-6045bdfb7c14 
+2026-08-14 15:24:22,419 | ERROR | business_central_tool.app.core.exceptions.handlers | Business Central error: Invalid company_id: b497dc51-8376-f111-a5be-6045bdfb7c14 
+2026-08-14 15:26:58,276 | ERROR | business_central_tool.app.core.exceptions.handlers | Business Central error: Invalid company_id: b497dc51-8376-f111-a5be-6045bdfb7c14 
+2026-08-14 15:30:08,527 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:30:08,527 | INFO | utils.human_approval | Tool requested: delete_customer
+2026-08-14 15:30:08,527 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer_id":"81ce3ece-c397-f111-8073-6045bdcea334","etag":"W/\"JzE5OzczNzQ2OTgwNzk2NTIwNDQ3MTQxOzAwOyc=\""}
+2026-08-14 15:30:11,250 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 15:30:11,252 | INFO | agent_framework | Function name: delete_customer
+2026-08-14 15:30:13,464 | ERROR | agent_framework | Function failed. Error: Expecting value: line 1 column 1 (char 0)
+2026-08-14 15:30:13,464 | INFO | agent_framework | Function duration: 2.214508s
+2026-08-14 15:30:13,470 | WARNING | agent_framework | Function 'delete_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+2026-08-14 15:30:17,732 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:30:17,732 | INFO | utils.human_approval | Tool requested: delete_customer
+2026-08-14 15:30:17,732 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer_id":"81ce3ece-c397-f111-8073-6045bdcea334","etag":"W/\"JzE5OzczNzQ2OTgwNzk2NTIwNDQ3MTQxOzAwOyc=\""}
+2026-08-14 15:30:43,356 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 15:30:43,356 | INFO | agent_framework | Function name: delete_customer
+2026-08-14 15:30:44,455 | INFO | business_central_tool.app.core.exceptions.handlers | Business Central resource not found: {"error":{"code":"BadRequest_ResourceNotFound","message":"Resource not found for the segment 'customer'.  CorrelationId:  d64963d5-5c7c-4d7f-bbf0-4d9a25515cb1."}}
+2026-08-14 15:30:44,455 | ERROR | agent_framework | Function failed. Error: Client error '404 Not Found' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/81ce3ece-c397-f111-8073-6045bdcea334?etag=W%2F%22JzE5OzczNzQ2OTgwNzk2NTIwNDQ3MTQxOzAwOyc%3D%22'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-08-14 15:30:44,470 | INFO | agent_framework | Function duration: 1.110810s
+2026-08-14 15:30:44,470 | WARNING | agent_framework | Function 'delete_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: HTTPStatusError("Client error '404 Not Found' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/81ce3ece-c397-f111-8073-6045bdcea334?etag=W%2F%22JzE5OzczNzQ2OTgwNzk2NTIwNDQ3MTQxOzAwOyc%3D%22'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404")

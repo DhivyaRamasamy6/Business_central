@@ -7,7 +7,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 # PROJECT ROOT
 # ============================================================
 
-BASE_DIR = Path(__file__).resolve().parents[5]
+BASE_DIR = Path(__file__).resolve().parents[6]
 ENV_FILE = BASE_DIR / ".env"
 
 
@@ -54,7 +54,7 @@ class Settings(BaseSettings):
     # HTTP
     # ========================================================
 
-    http_timeout: float = 30.0
+    http_timeout: float = 120.0
 
     # ========================================================
     # Retry

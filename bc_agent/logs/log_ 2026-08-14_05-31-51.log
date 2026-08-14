@@ -1,0 +1,102 @@
+2026-08-14 05:35:13,845 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:35:13,847 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:35:13,847 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:35:15,633 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:35:15,637 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:35:15,637 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:35:15,637 | INFO | agent_framework | Function duration: 0.000027s
+2026-08-14 05:35:15,637 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")
+2026-08-14 05:35:18,924 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:35:18,924 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:35:18,924 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:35:26,018 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:35:26,018 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:35:26,018 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:35:26,018 | INFO | agent_framework | Function duration: 0.000024s
+2026-08-14 05:35:26,018 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")
+2026-08-14 05:36:44,018 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:36:44,018 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:36:44,020 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:36:49,058 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:36:49,058 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:36:49,058 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:36:49,058 | INFO | agent_framework | Function duration: 0.000029s
+2026-08-14 05:36:49,058 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")
+2026-08-14 05:36:56,205 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:36:56,205 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:36:56,205 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:36:58,819 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:36:58,823 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:36:58,823 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:36:58,823 | INFO | agent_framework | Function duration: 0.000029s
+2026-08-14 05:36:58,823 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")
+2026-08-14 05:41:35,142 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:41:35,142 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:41:35,142 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:41:36,700 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:41:36,700 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:41:36,700 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:41:36,700 | INFO | agent_framework | Function duration: 0.000048s
+2026-08-14 05:41:36,700 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")
+2026-08-14 05:41:40,565 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:41:40,568 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:41:40,568 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:41:42,801 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:41:42,801 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:41:42,801 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:41:42,801 | INFO | agent_framework | Function duration: 0.000015s
+2026-08-14 05:41:42,801 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")
+2026-08-14 05:41:48,242 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:41:48,242 | INFO | utils.human_approval | Tool requested: get_company
+2026-08-14 05:41:48,242 | INFO | utils.human_approval | Arguments: {"comapany_id":"b497dc51-8376-f111-a5be-6045bdfb7c14"}
+2026-08-14 05:41:50,388 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:41:50,388 | INFO | agent_framework | Function name: get_company
+2026-08-14 05:41:53,380 | INFO | agent_framework | Function get_company succeeded.
+2026-08-14 05:41:53,380 | INFO | agent_framework | Function duration: 2.998273s
+2026-08-14 05:41:58,794 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:41:58,794 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:41:58,794 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:42:48,500 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:42:48,502 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:42:48,502 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:42:48,502 | INFO | agent_framework | Function duration: 0.000022s
+2026-08-14 05:42:48,502 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")
+2026-08-14 05:43:40,885 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:43:40,885 | INFO | utils.human_approval | Tool requested: get_company
+2026-08-14 05:43:40,885 | INFO | utils.human_approval | Arguments: {"comapany_id":"d497dc51-8376-f111-a5be-6045bdfb7c14"}
+2026-08-14 05:43:42,712 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:43:42,713 | INFO | agent_framework | Function name: get_company
+2026-08-14 05:43:44,982 | ERROR | business_central_tool.app.core.exceptions.handlers | Business Central error: Company does not exist: d497dc51-8376-f111-a5be-6045bdfb7c14
+2026-08-14 05:43:44,984 | ERROR | agent_framework | Function failed. Error: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/business-central/companies/d497dc51-8376-f111-a5be-6045bdfb7c14'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-08-14 05:43:44,984 | INFO | agent_framework | Function duration: 2.273102s
+2026-08-14 05:43:44,984 | WARNING | agent_framework | Function 'get_company' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: HTTPStatusError("Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/business-central/companies/d497dc51-8376-f111-a5be-6045bdfb7c14'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500")
+2026-08-14 05:43:47,645 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:43:47,645 | INFO | utils.human_approval | Tool requested: get_company
+2026-08-14 05:43:47,645 | INFO | utils.human_approval | Arguments: {"comapany_id":"d497dc51-8376-f111-a5be-6045bdfb7c14"}
+2026-08-14 05:43:56,716 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:43:56,716 | INFO | agent_framework | Function name: get_company
+2026-08-14 05:43:58,506 | ERROR | business_central_tool.app.core.exceptions.handlers | Business Central error: Company does not exist: d497dc51-8376-f111-a5be-6045bdfb7c14
+2026-08-14 05:43:58,508 | ERROR | agent_framework | Function failed. Error: Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/business-central/companies/d497dc51-8376-f111-a5be-6045bdfb7c14'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-08-14 05:43:58,508 | INFO | agent_framework | Function duration: 1.788630s
+2026-08-14 05:43:58,508 | WARNING | agent_framework | Function 'get_company' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: HTTPStatusError("Server error '500 Internal Server Error' for url 'http://127.0.0.1:8000/api/business-central/companies/d497dc51-8376-f111-a5be-6045bdfb7c14'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500")
+2026-08-14 05:44:02,285 | INFO | agent_framework | Function name: list_companies
+2026-08-14 05:44:02,909 | INFO | agent_framework | Function list_companies succeeded.
+2026-08-14 05:44:02,909 | INFO | agent_framework | Function duration: 0.619755s
+2026-08-14 05:46:38,855 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:46:38,855 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:46:38,855 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:46:41,113 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:46:41,113 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:46:41,113 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:46:41,113 | INFO | agent_framework | Function duration: 0.000032s
+2026-08-14 05:46:41,117 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")
+2026-08-14 05:46:45,100 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 05:46:45,100 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 05:46:45,100 | INFO | utils.human_approval | Arguments: {"displayName":"Contoso Ltd","type":"Company","addressLine1":"123 Main Street","addressLine2":"Suite 100","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"600001","phoneNumber":"9876543210","email":"contact@contoso.com","website":"https://contoso.com"}
+2026-08-14 05:46:47,966 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 05:46:47,966 | INFO | agent_framework | Function name: create_customer
+2026-08-14 05:46:47,966 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
+2026-08-14 05:46:47,966 | INFO | agent_framework | Function duration: 0.000020s
+2026-08-14 05:46:47,966 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")

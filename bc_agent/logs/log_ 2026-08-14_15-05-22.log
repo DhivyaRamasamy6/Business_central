@@ -1,0 +1,13 @@
+2026-08-14 15:05:46,717 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:05:46,717 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 15:05:46,717 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer":{"displayName":"ContosoLtd","type":"Company","addressLine1":"123 Main Street","city":"Chennai","state":"Tamil Nadu","country":"India","phoneNumber":"9876543210","email":"contoso@example.com","website":"https://contoso.com"}}
+2026-08-14 15:05:50,232 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 15:05:50,232 | INFO | agent_framework | Function name: create_customer
+2026-08-14 15:05:52,447 | WARNING | business_central_tool.app.core.exceptions.handlers | Business Central bad request: {"error":{"code":"Internal_InvalidTableRelation","message":"The field Country/Region Code of table Customer contains a value (INDIA) that cannot be found in the related table (Country/Region).  CorrelationId:  fa59bad4-b7ff-4b62-a71f-3ded79a7d555."}}
+2026-08-14 15:05:52,449 | ERROR | agent_framework | Function failed. Error: Client error '400 Bad Request' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-08-14 15:05:52,449 | INFO | agent_framework | Function duration: 2.208494s
+2026-08-14 15:05:52,450 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: HTTPStatusError("Client error '400 Bad Request' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400")
+2026-08-14 15:05:56,692 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:05:56,692 | INFO | utils.human_approval | Tool requested: create_customer
+2026-08-14 15:05:56,692 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer":{"displayName":"ContosoLtd","type":"Company","addressLine1":"123 Main Street","city":"Chennai","state":"Tamil Nadu","country":"India","phoneNumber":"9876543210","email":"contoso@example.com","website":"https://contoso.com"}}

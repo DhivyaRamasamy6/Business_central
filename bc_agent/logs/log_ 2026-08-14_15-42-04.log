@@ -1,0 +1,48 @@
+2026-08-14 15:43:30,926 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:43:30,928 | INFO | utils.human_approval | Tool requested: update_customer
+2026-08-14 15:43:30,928 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer_id":"16d5e0cd-c797-f111-8072-70a8a56939de","customer":{"phoneNumber":"9876500000","website":"https://contosoltd.com"},"etag":"W/\"JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc=\""}
+2026-08-14 15:43:34,192 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 15:43:34,192 | INFO | agent_framework | Function name: update_customer
+2026-08-14 15:43:34,383 | ERROR | agent_framework | Function failed. Error: Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/16d5e0cd-c797-f111-8072-70a8a56939de?etag=W%2F%22JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc%3D%22'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-08-14 15:43:34,383 | INFO | agent_framework | Function duration: 0.200559s
+2026-08-14 15:43:34,383 | WARNING | agent_framework | Function 'update_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: HTTPStatusError("Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/16d5e0cd-c797-f111-8072-70a8a56939de?etag=W%2F%22JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc%3D%22'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422")
+2026-08-14 15:43:39,334 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:43:39,334 | INFO | utils.human_approval | Tool requested: update_customer
+2026-08-14 15:43:39,334 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer_id":"16d5e0cd-c797-f111-8072-70a8a56939de","customer":{"phoneNumber":"9876500000","website":"https://contosoltd.com"},"etag":"W/\"JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc=\""}
+2026-08-14 15:45:01,367 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 15:45:01,367 | INFO | agent_framework | Function name: update_customer
+2026-08-14 15:45:01,585 | ERROR | agent_framework | Function failed. Error: Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/16d5e0cd-c797-f111-8072-70a8a56939de?etag=W%2F%22JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc%3D%22'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-08-14 15:45:01,585 | INFO | agent_framework | Function duration: 0.217839s
+2026-08-14 15:45:01,585 | WARNING | agent_framework | Function 'update_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: HTTPStatusError("Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/16d5e0cd-c797-f111-8072-70a8a56939de?etag=W%2F%22JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc%3D%22'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422")
+2026-08-14 15:48:27,564 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:48:27,564 | INFO | utils.human_approval | Tool requested: delete_customer
+2026-08-14 15:48:27,564 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer_id":"16d5e0cd-c797-f111-8072-70a8a56939de","etag":"W/\"JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc=\""}
+2026-08-14 15:48:30,090 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 15:48:30,090 | INFO | agent_framework | Function name: delete_customer
+2026-08-14 15:48:31,410 | WARNING | business_central_tool.app.core.exceptions.handlers | Business Central resource conflict: {"error":{"code":"Request_EntityChanged","message":"Another user has already changed the record.  CorrelationId:  f76effd6-c7df-41b0-a86f-e48337116825."}}
+2026-08-14 15:48:31,410 | ERROR | agent_framework | Function failed. Error: Client error '409 Conflict' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/16d5e0cd-c797-f111-8072-70a8a56939de?etag=W%2F%22JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc%3D%22'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409
+2026-08-14 15:48:31,410 | INFO | agent_framework | Function duration: 1.321304s
+2026-08-14 15:48:31,410 | WARNING | agent_framework | Function 'delete_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: HTTPStatusError("Client error '409 Conflict' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/16d5e0cd-c797-f111-8072-70a8a56939de?etag=W%2F%22JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc%3D%22'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409")
+2026-08-14 15:51:39,846 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:51:39,846 | INFO | utils.human_approval | Tool requested: delete_customer
+2026-08-14 15:51:39,846 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer_id":"16d5e0cd-c797-f111-8072-70a8a56939de","etag":"W/\"JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc=\""}
+2026-08-14 15:51:43,183 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 15:51:43,183 | INFO | agent_framework | Function name: delete_customer
+2026-08-14 15:51:44,548 | WARNING | business_central_tool.app.core.exceptions.handlers | Business Central resource conflict: {"error":{"code":"Request_EntityChanged","message":"Another user has already changed the record.  CorrelationId:  103ebf28-b58e-4260-ae47-c86359cb0819."}}
+2026-08-14 15:51:44,548 | ERROR | agent_framework | Function failed. Error: Client error '409 Conflict' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/16d5e0cd-c797-f111-8072-70a8a56939de?etag=W%2F%22JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc%3D%22'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409
+2026-08-14 15:51:44,548 | INFO | agent_framework | Function duration: 1.364840s
+2026-08-14 15:51:44,548 | WARNING | agent_framework | Function 'delete_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: HTTPStatusError("Client error '409 Conflict' for url 'http://127.0.0.1:8000/api/business-central/companies/b497dc51-8376-f111-a5be-6045bdfb7c14/customers/16d5e0cd-c797-f111-8072-70a8a56939de?etag=W%2F%22JzE5Ozc3MzMxNzgzNDY3MjcxOTUwMzUxOzAwOyc%3D%22'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/409")
+2026-08-14 15:52:35,265 | INFO | agent_framework | Function name: get_customer
+2026-08-14 15:52:36,400 | INFO | agent_framework | Function get_customer succeeded.
+2026-08-14 15:52:36,400 | INFO | agent_framework | Function duration: 1.128538s
+2026-08-14 15:54:07,590 | INFO | utils.human_approval | Approval requests pending: 1
+2026-08-14 15:54:07,590 | INFO | utils.human_approval | Tool requested: delete_customer
+2026-08-14 15:54:07,590 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer_id":"16d5e0cd-c797-f111-8072-70a8a56939de","etag":"W/\"JzIwOzEwOTgzNDAyNzMxNDQxODM1MDM0MTswMDsn\""}
+2026-08-14 15:54:10,232 | INFO | utils.human_approval | Approval decision: Approved
+2026-08-14 15:54:10,232 | INFO | agent_framework | Function name: delete_customer
+2026-08-14 15:54:12,294 | INFO | agent_framework | Function delete_customer succeeded.
+2026-08-14 15:54:12,294 | INFO | agent_framework | Function duration: 2.058413s
