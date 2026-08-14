@@ -1,5 +1,5 @@
 from fastapi import APIRouter,FastAPI
-import models.request
+from model.request import ChatRequest
 from models.response import ChatResponse
 from agents.crm_agent import agent
 from utils.human_approval import handle_approvals
@@ -7,7 +7,7 @@ from utils.session_manager import session_manager
 
 router = APIRouter(prefix="/Agent_Response",tags=["Business Central Agent"])
 @router.post("/chat",response_model=ChatResponse,)
-async def chat(request: models.request.ChatRequest):
+async def chat(request:ChatRequest):
 
     session = session_manager.get_or_create(
         request.session_id,

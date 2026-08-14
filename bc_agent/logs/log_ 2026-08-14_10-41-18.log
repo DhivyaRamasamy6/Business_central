@@ -1,4 +1,0 @@
-2026-08-14 11:17:56,017 | INFO | agent_framework | Function name: create_customer
-2026-08-14 11:17:56,022 | ERROR | agent_framework | Function failed. Error: create_customer() got an unexpected keyword argument 'displayName'
-2026-08-14 11:17:56,022 | INFO | agent_framework | Function duration: 0.000083s
-2026-08-14 11:17:56,026 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: TypeError("create_customer() got an unexpected keyword argument 'displayName'")

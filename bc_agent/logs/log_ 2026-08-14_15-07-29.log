@@ -1,7 +1,0 @@
-2026-08-14 15:07:48,404 | INFO | utils.human_approval | Approval requests pending: 1
-2026-08-14 15:07:48,414 | INFO | utils.human_approval | Tool requested: create_customer
-2026-08-14 15:07:48,414 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer":{"displayName":"ContosoLtd","type":"Company","addressLine1":"123 Main Street","city":"Chennai","state":"Tamil Nadu","country":"IN","postalCode":null,"phoneNumber":"9876543210","email":"contoso@example.com","website":"https://contoso.com"}}
-2026-08-14 15:07:52,165 | INFO | utils.human_approval | Approval decision: Approved
-2026-08-14 15:07:52,169 | INFO | agent_framework | Function name: create_customer
-2026-08-14 15:07:54,349 | INFO | agent_framework | Function create_customer succeeded.
-2026-08-14 15:07:54,349 | INFO | agent_framework | Function duration: 2.178962s
