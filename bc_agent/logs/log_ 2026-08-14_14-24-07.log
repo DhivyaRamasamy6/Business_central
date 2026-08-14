@@ -1,8 +1,0 @@
-2026-08-14 14:24:26,725 | INFO | utils.human_approval | Approval requests pending: 1
-2026-08-14 14:24:26,725 | INFO | utils.human_approval | Tool requested: create_customer
-2026-08-14 14:24:26,725 | INFO | utils.human_approval | Arguments: {"company_id":"b497dc51-8376-f111-a5be-6045bdfb7c14","customer":{"displayName":"ContosoLtd","type":"Company","addressLine1":"123 Main Street","city":"Chennai","state":"Tamil Nadu","country":"India","postalCode":"-","phoneNumber":"9876543210","email":"contoso@example.com","website":"https://contoso.com"}}
-2026-08-14 14:24:30,771 | INFO | utils.human_approval | Approval decision: Approved
-2026-08-14 14:24:30,774 | INFO | agent_framework | Function name: create_customer
-2026-08-14 14:24:30,980 | ERROR | agent_framework | Function failed. Error: 'dict' object has no attribute 'model_dump_json'
-2026-08-14 14:24:30,992 | INFO | agent_framework | Function duration: 0.217185s
-2026-08-14 14:24:30,992 | WARNING | agent_framework | Function 'create_customer' raised an exception; returning an error result to the model. Set include_detailed_errors=True for the full detail. Exception: AttributeError("'dict' object has no attribute 'model_dump_json'")
